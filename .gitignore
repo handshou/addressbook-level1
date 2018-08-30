@@ -25,3 +25,6 @@ test/data/
 # Gradle files
 /.gradle/
 /build/
+
+# MAC files
+.DS_STORE
