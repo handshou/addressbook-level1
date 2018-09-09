@@ -207,13 +207,14 @@ public class AddressBook {
      */
 
     public static void main(String[] args) {
+        String feedback = "";
         showWelcomeMessage();
         processProgramArgs(args);
         loadDataFromStorage();
         while (true) {
             String userCommand = getUserInput();
             echoUserCommand(userCommand);
-            String feedback = executeCommand(userCommand);
+            feedback = executeCommand(userCommand);
             showResultToUser(feedback);
         }
     }
